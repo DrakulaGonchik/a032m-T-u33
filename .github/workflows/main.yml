@@ -49,9 +49,9 @@ jobs:
         export SUBARCH="arm64"
         
         # Export toolchain/clang/llvm flags
-        export CROSS_COMPILE="$(pwd)/toolchain/gcc/bin/aarch64-linux-android-"
+        export CROSS_COMPILE="$(pwd)/gcc/bin/aarch64-linux-android-"
         export CLANG_TRIPLE="aarch64-linux-android-"
-        export CC="$(pwd)/toolchain/clang/clang-r383902/bin/clang"
+        export CC="$(pwd)/clang/clang-r383902/bin/clang"
         
         mkdir out
         make O="$(pwd)/out" a3core_eur_open_defconfig
